@@ -9,6 +9,10 @@ RUN apk add --update bash wget git tini && \
     rm -rf /root /tmp/* /var/cache/apk/* && \
     mkdir /root
 
+USER node
+
+WORKDIR /home/node
+
 EXPOSE 5678
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh

@@ -9,14 +9,14 @@ services:
       context: . 
       dockerfile: Dockerfile 
       args:
-        N8N_VERSION: "1.84.1"
+        N8N_VERSION: "latest"
     image: wn1980/n8n-custom
     container_name: n8n_custom
     restart: no
-    volumes:
-      - workspace:/workspace
-    environment:
-      - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
-      - N8N_RUNNERS_ENABLED=true
-    ports:
-      - 5678:5678
+    # volumes:
+    #   - workspace:/workspace
+    # environment:
+    #   - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
+    #   - N8N_RUNNERS_ENABLED=true
+    # ports:
+    #   - 5678:5678
