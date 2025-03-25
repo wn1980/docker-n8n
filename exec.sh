@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Exit immediately if a command fails.
+set -e
+
 # Set variables
 CONTAINER_NAME="n8n_custom"
 USERNAME="node"
