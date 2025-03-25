@@ -1,4 +1,4 @@
-FROM node:22-alpine
+FROM --platform=linux/x86-64 node:22-alpine
 
 ARG N8N_VERSION
 
